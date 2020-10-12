@@ -1,0 +1,117 @@
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .top-header {
+    padding: 18px 0;
+
+    &__widgets {
+      display: none;
+    }
+  }
+
+  header {
+    .navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            padding: 12px 0;
+            text-align: right;
+
+            &.dropdown-toggle {
+              padding: 12px 24px;
+            }
+          }
+        }
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          margin-top: 12px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    height: 432px;
+
+    .carousel {
+      &-inner {
+        .carousel-item {
+          .carousel-caption {
+            max-width: 100%;
+            padding-top: 48px;
+            padding-bottom: 58px;
+            padding-left: 52px;
+            padding-right: 42px;
+
+            h1>br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .searchbox {
+    margin-top: -48px;
+
+    .search-bar {
+      padding: 24px 24px 36px;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .search {
+        flex-direction: column;
+
+        &__input {
+          flex: 1 1 100%;
+          position: relative;
+
+          .form-control {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom: 12px;
+          }
+        }
+        &__categories {
+          flex: 1 1 100%;
+          margin-bottom: 12px;
+
+          .bootstrap-select {
+            height: 100%;
+
+            .dropdown-toggle {
+              border: 1px solid $theme-orange!important;
+            }
+          }
+        }
+        &__sort {
+          flex: 1 1 100%;
+
+          .bootstrap-select {
+            .dropdown-toggle {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .p-card {
+    margin: 15px 0;
+  }
+}
